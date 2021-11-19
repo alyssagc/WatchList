@@ -1,0 +1,7 @@
+ <h1> Adiciona um comentario para a lista </h1>
+<%= simple_form_for [@list, @bookmark] do |f|%>
+    <%= f.input :comment, placeholder: 'Adicione um comentário sobre o filme' %>
+    <%= f.association :movie%>
+    <%= f.submit 'Add a comment' %>
+  <% end %>
+<%= link_to 'back', @list %>

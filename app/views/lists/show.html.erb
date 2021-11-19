@@ -1,1 +1,7 @@
 <%=@list.name%>
+<% @list.bookmarks.each do |bookmark| %>
+  <%= bookmark.comment %>
+  <%= link_to 'delete bookmark', bookmark_path(bookmark), method: :delete, data: { confirm: 'Are you sure you want to delete this list?' } %>
+<% end %>
+<%= link_to 'add a comment', new_list_bookmark_path(@list)%>
+<%= link_to 'back', lists_path%>
