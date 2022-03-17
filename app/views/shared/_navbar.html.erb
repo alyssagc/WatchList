@@ -1,0 +1,11 @@
+<nav class= "navbar-lewagon navbar">
+  <div>
+    <%= link_to root_path, class: "navbar-brand d-flex" do %>
+      <%= image_tag "LogoPipoca.png"%>
+    <% end %>
+  </div>
+  <div class="nav-link text-reset">
+    <h5><%= link_to 'My list', lists_path, class: "p-3 text-nav" %>
+    <%= link_to 'New list', new_list_path, class: "text-nav" %></h5>
+  </div>
+</nav>
