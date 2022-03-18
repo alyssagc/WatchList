@@ -1,24 +1,8 @@
-# README
+### Watch List Project
+Projeto para criar uma plataforma de filmes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+:construction: Em construção... :construction:
 
-Things you may want to cover:
+### Descrição
+A aplicação consiste em ajudar amantes de filmes organizarem e comentarem sobre filmes assistidos; Permitindo criar diversas listas, seja ela por gêneros, ou filmes favoritos, a escolha fica critério do usuário. Além disso, o usuário pode adicionar comentários sobre cada filme adicionado na lista.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
