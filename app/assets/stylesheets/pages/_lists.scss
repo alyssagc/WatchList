@@ -1,0 +1,58 @@
+.list-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  font-family: monospace;
+}
+.list-container h1{
+  color: rgb(122, 11, 192);
+  font-family: monospace;
+}
+
+#banner-indexlist-img{
+  width: 100%;
+}
+
+.body{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.card-deck{
+  width: 100%;
+  margin-bottom: 10rem;
+}
+.card-list{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.card-deck img{
+  width: 20rem;
+  height: 15rem;
+  box-shadow: 0 0 1em lightseagreen;
+  animation: pisca 3s infinite;
+}
+
+.card-deck .card-body{
+  width: 20rem;
+  color: rgb(122, 11, 192);
+  box-shadow: 0 0 1em lightseagreen;
+  animation: pisca 3s infinite;
+}
+@keyframes pisca{
+  25% {box-shadow: 0 0 1em lightseagreen; }
+  50% {box-shadow: 0 0 1em purple}
+  100% {box-shadow: 0 0 1em lightseagreen; }
+}
+
+#plus-list{
+  color: rgb(122, 11, 192);
+  opacity: 0.5;
+}
+
+#plus-list:hover {
+  opacity: 1;
+}
