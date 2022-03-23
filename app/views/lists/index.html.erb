@@ -1,18 +1,21 @@
 <div class= "list-container">
-  <%= image_tag "Movietime.png", id: 'banner-indexlist-img' %>
-  <div class= "body">
-    <h1>My Movies Lists</h1>
-  </div>
-  <div class= "card-group">
-    <div class="card card-list">
-      <% @lists.each do |list| %>
-        <%= link_to list_path(list) do %>
-          <%= image_tag "Movietime.png"%>
-          <div class="card-body">
-            <%= list.name %>
-          </div>
-        <%end%>
-      <%end%>
+    <%= image_tag "Movietime.png", id: 'banner-indexlist-img' %>
+    <div class= "body">
+      <h1>My Movies Lists <i class="fas fa-film"></i></h1>
     </div>
-  </div>
+    <div class= "row card-deck row-cols-3">
+      <% @lists.each do |list| %>
+        <div class="card-list">
+          <%= link_to list_path(list) do %>
+            <%= image_tag "ListaFilme.png"%>
+            <div class="card-body">
+              <%= list.name %>
+            </div>
+          <%end%>
+        </div>
+      <%end%>
+      <h1 class="d-flex justify-content-center align-items-center"><%= link_to new_list_path do %>
+        <i class="fas fa-plus" id= "plus-list"></i>
+      <%end%></h1>
+    </div>
 </div>
