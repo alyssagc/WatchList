@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  min-height: 100vh;
   font-family: monospace;
+  background-color: black;
 }
 .list-container h1{
   color: rgb(122, 11, 192);
@@ -41,6 +42,7 @@
   color: rgb(122, 11, 192);
   box-shadow: 0 0 1em lightseagreen;
   animation: pisca 3s infinite;
+  background-color: white;
 }
 @keyframes pisca{
   25% {box-shadow: 0 0 1em lightseagreen; }
@@ -55,4 +57,31 @@
 
 #plus-list:hover {
   opacity: 1;
+}
+
+.form{
+  color: rgb(250, 88, 182);
+  width: 50%;
+}
+
+.new-list-card{
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  background-color: black;
+  border-radius: 5%;
+  box-shadow: 0 0 1em lightseagreen;
+  width: 35%;
+  height: 50vh;
+}
+.btn-new{
+  color: rgb(250, 88, 182);
+  font-weight: bolder;
+  margin-top: 12rem;
+}
+.btn-create{
+  height: 4.5vh;
+  color: rgb(250, 88, 182);
+  font-weight: bolder;
 }
