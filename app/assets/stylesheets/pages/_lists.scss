@@ -6,11 +6,15 @@
   font-family: monospace;
   background-color: black;
 }
+
 .list-container h1{
   color: rgb(122, 11, 192);
   font-family: monospace;
 }
-
+.body-container h1{
+  color: rgb(122, 11, 192);
+  font-family: monospace;
+}
 #banner-indexlist-img{
   height: 75vh;
   width: 100%;
@@ -85,4 +89,17 @@
   height: 4.5vh;
   color: rgb(250, 88, 182);
   font-weight: bolder;
+}
+
+.body-container{
+  padding: 5rem;
+  min-height: 100vh;
+  font-family: monospace;
+  background-color: black;
+}
+.body-container h5{
+  font-weight: bolder;
+}
+.body-container .star{
+  color: gold;
 }
