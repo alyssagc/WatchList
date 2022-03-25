@@ -1,7 +1,13 @@
- <h1> Adiciona um comentario para a lista </h1>
-<%= simple_form_for [@list, @bookmark] do |f|%>
-    <%= f.input :comment, placeholder: 'Adicione um comentário sobre o filme' %>
-    <%= f.association :movie%>
-    <%= f.submit 'Add a comment' %>
-  <% end %>
-<%= link_to 'back', @list %>
+<div class="list-container d-flex flex-column align-items-center">
+  <div class="new-list-card">
+    <h1 class="text-danger mt-3 mb-5 text-center">Whats your comment?</h1>
+    <div class="form">
+      <%= simple_form_for [@list, @bookmark] do |f|%>
+        <%= f.association :movie, label: "Choose Movie"%>
+        <%= f.input :comment, as: :text %>
+        <%= f.submit 'Add Comment', class: "btn-create align-items-center" %>
+      <% end %>
+    </div>
+    <%= link_to 'Back', @list, id: "btn-new-comment" %>
+  </div>
+</div>
