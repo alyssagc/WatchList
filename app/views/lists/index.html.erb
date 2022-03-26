@@ -7,7 +7,7 @@
       <% @lists.each do |list| %>
         <div class="card-list">
           <%= link_to list_path(list) do %>
-            <%= image_tag "ListaFilme.png"%>
+            <%= image_tag "list/#{rand(6)}.png"%>
             <div class="card-body">
               <%= list.name %>
             </div>
